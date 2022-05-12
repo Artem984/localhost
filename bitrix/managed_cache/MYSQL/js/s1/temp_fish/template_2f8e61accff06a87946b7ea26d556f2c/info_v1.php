@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/local/templates/temp_fish/vendor/jquery/jquery.min.js" => "156040881488145",]; ?>

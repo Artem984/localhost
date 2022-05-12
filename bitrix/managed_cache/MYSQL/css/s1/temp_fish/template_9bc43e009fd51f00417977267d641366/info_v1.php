@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/local/templates/temp_fish/vendor/fontawesome-free/css/all.min.css" => "156040881455967","/local/templates/temp_fish/vendor/magnific-popup/magnific-popup.css" => "15604088146951","/local/components/starkiller/menu/templates/blue_tabs/style.css" => "1648021848778","/local/templates/temp_fish/styles.css" => "1652255653218867",]; ?>
