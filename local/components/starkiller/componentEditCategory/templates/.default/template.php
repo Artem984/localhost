@@ -1,5 +1,4 @@
-<? if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true){die();}
-        $arGroups = $USER->GetUserGroupArray();?>
+<? if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true){die();}?>
 
 <div class="container" style="margin-top:100px;">
     <div style="margin-top: 100px;">
@@ -7,7 +6,7 @@
         <?foreach ($arResult as $item) {?>
             <div style="display: flex;">
                 <p>ID инфоблока: <span style="text-decoration:underline;"><?=$item["ID"]?> <?=$item['NAME']?>:</span></p>
-                <a style='margin-left:10px;' href="..\..\local\components\starkiller\componentEditCategory\deleteCategory.php?IB=<?=$item["ID"]?>">удалить Категорию</a>
+                <a style='margin-left:10px;' href="..\..\local\components\starkiller\componentEditCategory\deleteCategory.php?IB=<?=$item["ID"]?>">удалить инфоблок</a>
             </div>
         <?}?>
     </div>

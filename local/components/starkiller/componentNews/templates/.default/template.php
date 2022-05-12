@@ -1,4 +1,6 @@
-<? if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true){die();}?>
+<? if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true){die();}
+$arGroups = $USER->GetUserGroupArray();?>
+
 <section class="page-section bg-dark text-white" id="news">
     <div class="container text-center">
       <h2 class="mb-0"><?=$arResult[0]["IBLOCK_NAME"]?></h2>
@@ -20,11 +22,14 @@
 					</div>
 				</div>
 			<? } ?>
-
+				
 		</div>
     </div>
-
-		<a href="/newsDetial/addNews/index.php?IB=<?=$item["IB"]?>" class="btn btn-primary">Добавление новости</a>
-		<a href="/newsDetial/addCategory/index.php?IB=<?=$item["IB"]?>" class="btn btn-primary">Добавление Категории</a>
-		<a href="/newsDetial/editCategory/index.php?IB=<?=$item["IB"]?>" class="btn btn-primary">Добавление Категории</a>
+	<?if(in_array(1,$arGroups)||in_array(7,$arGroups)||in_array(8,$arGroups)){?>
+		<div class="container" style="margin-top: 50px;display: flex;justify-content: space-around;">
+			<a href="/newsDetial/addNews/index.php?IB=<?=$item["IB"]?>" class="btn btn-primary">Добавление новости</a>
+			<a href="/newsDetial/addCategory/index.php?IB=<?=$item["IB"]?>" class="btn btn-primary">Добавление Категории</a>
+			<a href="/newsDetial/editCategory/index.php?IB=<?=$item["IB"]?>" class="btn btn-primary">Добавление Категории</a>
+		</div>
+	<? } ?>
   </section>
